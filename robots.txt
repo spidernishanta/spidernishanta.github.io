@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://spidernishanta.github.io/sitemap.xml
