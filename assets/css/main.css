@@ -31,6 +31,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background: rgb(248,240,229);
+	background: linear-gradient(90deg, rgb(19, 38, 59) 54%, rgb(15, 52, 109) 100%);
+
 }
 
 ol, ul {
@@ -1919,6 +1922,7 @@ input, select, textarea {
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
+			box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 		}
 
 			.box.style1 h3 {
@@ -1988,29 +1992,31 @@ input, select, textarea {
 
 	.wrapper {
 		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0px 1px 0px 0px rgba(50, 75, 11, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
-			background-image: none;
-			background-color: #fff;
+			/* background-image: none;
+			background-color: #000000; */
+			background-image: linear-gradient(to right, #434343 0%, black 100%);
 		}
 
 		.wrapper.style2 {
-			background-color: #303030;
-			text-shadow: 1px 1px 0px #fff;
+			background: rgb(248,240,229);
+			background: linear-gradient(90deg, rgb(19, 38, 59) 54%, rgb(15, 52, 109) 100%);
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background: rgb(248,240,229);
+			background: linear-gradient(90deg, rgb(19, 38, 59) 54%, rgb(15, 52, 109) 100%);
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
-			color: #999;
+			background: rgb(248,240,229);
+			background: linear-gradient(90deg, rgb(19, 38, 59) 54%, rgb(15, 52, 109) 100%);
 			text-shadow: -1px -1px 0px #181818;
 		}
 
