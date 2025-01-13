@@ -20,36 +20,7 @@
 </head>
 
 <body class="is-preload">
-	<script type="text/javascript">
-		function Pop(){var cssRuleFile="https://cookieconsent.popupsmart.com/src/css/style.css";let lnk=document.createElement("link");lnk.setAttribute("rel","stylesheet");lnk.setAttribute("type","text/css");lnk.setAttribute("href",cssRuleFile);document.getElementsByTagName("head")[0].appendChild(lnk);let styl="undefined";var conDivObj;var fadeInTime=10;var fadeOutTime=10;let cookie={name:"cookieconsent_status",path:"/",expiryDays:365*24*60*60*5000,};let content={message:"This website uses cookies to ensure you get the best experience on our website.",btnText:"Got it!",mode:"  banner bottom",theme:" theme-classic",palette:" palette1",link:"Learn more",href:"https://www.cookiesandyou.com",target:"_blank",};let createPopUp=function(){console.log(content);if(typeof conDivObj==="undefined"){conDivObj=document.createElement("DIV");conDivObj.style.opacity=0;conDivObj.setAttribute("id","spopupCont");}
-conDivObj.innerHTML='<div id="poper" class="window '+
-content.mode+
-content.theme+
-content.palette+
-'"><span id="msg" class="message">'+
-content.message+
-'<a id="plcy-lnk" class="policylink" href="'+
-content.href+
-'"'+
-" target="+
-content.target+
-">"+
-content.link+
-'</a></span><div id="btn" class="compliance"><a  id="cookie-btn" class="spopupbtnok" >'+
-content.btnText+
-'</a></div></div>';document.body.appendChild(conDivObj);fadeIn(conDivObj);document.getElementById("cookie-btn").addEventListener("click",function(){saveCookie();fadeOut(conDivObj);});};let fadeOut=function(element){var op=1;var timer=setInterval(function(){if(op<=0.1){clearInterval(timer);conDivObj.parentElement.removeChild(conDivObj);}
-element.style.opacity=op;element.style.filter="alpha(opacity="+op*100+")";op-=op*0.1;},fadeOutTime);};let fadeIn=function(element){var op=0.1;var timer=setInterval(function(){if(op>=1){clearInterval(timer);}
-element.style.opacity=op;element.style.filter="alpha(opacity="+op*100+")";op+=op*0.1;},fadeInTime);};let checkCookie=function(key){var keyValue=document.cookie.match("(^|;) ?"+key+"=([^;]*)(;|$)");return keyValue?true:false;};let saveCookie=function(){var expires=new Date();expires.setTime(expires.getTime()+cookie.expiryDays);document.cookie=cookie.name+
-"="+
-"ok"+
-";expires="+
-expires.toUTCString()+
-"path="+
-cookie.path;};this.init=function(param){if(checkCookie(cookie.name))return;if(typeof param==="object"){if("ButtonText"in param)content.btnText=param.ButtonText;if("Mode"in param)content.mode=" "+param.Mode;if("Theme"in param)content.theme=" "+param.Theme;if("Palette"in param)content.palette=" "+param.Palette;if("Message"in param)content.message=param.Message;if("LinkText"in param)content.link=param.LinkText;if("Location"in param)content.href=param.Location;if("Target"in param)content.target=param.Target;if("Time"in param)
-setTimeout(function(){createPopUp();},param.Time*1000);else createPopUp();}};}
-window.start=new Pop();
-	</script>
-	<script> window.start.init({Palette:"palette2",Mode:"floating right",Theme:"classic",Message:"This website uses cookies to ensure you get the best experience on our website.",LinkText:" Learn More!",Location:"https://spidernishanta.github.io",Time:"5",})</script>
+	<script type="text/javascript" src="/assets/js/cookie.js"></script>
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
@@ -141,7 +112,7 @@ window.start=new Pop();
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://github.com/spidernishanta/TDMS" class="image featured"><img
-								src="images/pic01.jpg" alt="Nishanta Kakati" /></a>
+								src="images/pic01.jpg" alt="Telephone" /></a>
 						
 					</article>
 					<h3><a href="https://github.com/spidernishanta/TDMS">Telephone Directory Management System</a>
@@ -150,7 +121,7 @@ window.start=new Pop();
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://github.com/Ripunjay42/Facemask_detector" class="image featured"><img
-								src="images/pic02.webp" alt="Nishanta Kakati" /></a>
+								src="images/pic02.webp" alt="Facemask" /></a>
 					</article>
 					<h3><a href="https://github.com/Ripunjay42/Facemask_detector">Real Time Face Mask Detector</a>
 					</h3>
@@ -158,14 +129,14 @@ window.start=new Pop();
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://spidernishanta.github.io" class="image featured"><img src="images/pic03.gif"
-								alt="Nishanta Kakati" /></a>
+								alt="Portfolio" /></a>
 					</article>
 					<h3><a href="https://spidernishanta.github.io">Portfolio</a></h3>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://spidernishanta.github.io/photo-gallery-app" class="image featured"><img
-								src="images/pic04.png" alt="Nishanta Kakati" /></a>
+								src="images/pic04.png" alt="Images" /></a>
 					</article>
 					<h3><a href="https://spidernishanta.github.io/photo-gallery-app">Photo
 						Gallery App</a></h3>
@@ -173,14 +144,14 @@ window.start=new Pop();
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://spidernishanta-contacts.netlify.app" class="image featured"><img
-								src="images/Screenshot from 2024-02-10 18-10-27.png" alt="Nishanta Kakati" /></a>
+								src="images/Screenshot from 2024-02-10 18-10-27.png" alt="Contacts" /></a>
 						</article>
 						<h3><a href="https://spidernishanta-contacts.netlify.app">Firebase Contacts App</a></h3>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="photo-box">
 						<a href="https://www.quora.com/profile/Nishanta-Kakati-1" class="image featured"><img
-								src="images/pic06.jpg" alt="Nishanta Kakati" /></a>
+								src="images/pic06.jpg" alt="Quora" /></a>
 						</article>
 						<h3><a href="https://www.quora.com/profile/Nishanta-Kakati-1">Quora</a></h3>
 				</div>
